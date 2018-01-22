@@ -5,7 +5,7 @@ contract Splitter1 {
     mapping(address => uint) public balances;
     
     event LogContractOwner(address _owner);
-    event LogSenderReceivers(address _sender, address _receiver1, address _receiver2, uint _shareAmount, uint _changeAmount);
+    event LogSenderReceivers(address indexed _sender, address indexed _receiver1, address indexed _receiver2, uint _shareAmount, uint _changeAmount);
     
     function Splitter1() public payable {
         owner = msg.sender;
